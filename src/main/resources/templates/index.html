@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+        
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Strona główna</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script th:src="@{/functionsRest.js}"></script>
+        
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Zadanie 7</h1>
+        <h2>Kot Kamil</h2>
+        <button type="button" onclick="getProductList();">Wczytaj listę</button>
+        <div id="result">
+        </div>
+        <button type="button" onclick="createProduct();">Nowy produkt</button>
+    </body>
+</html>
